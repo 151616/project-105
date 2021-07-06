@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>WhoDat</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body id="body">
+        <center>
+<h1 class="btn btn-default" id="heading" style="font-size: 22px;">WhoDat</h1>
+<br>
+<br>
+<label id="caption" style="font-size: 10px;" ></label>
+<br>
+<br>
+<div class="container">
+<label id="explanation">WhoDat Recognizes a person's face and compares it with the already-taken 100-200 pictures of the person.</label>
+<br>
+<br>
+<label>These are the people it recognizes</label>
+<br>
+<br>
+<b class="objects">
+    Mother
+    <hr>
+    Father
+    <hr>
+    Brother
+    <hr>
+    Me
+    <hr>
+</b>
+<br>
+<br>
+<label id="webcam">Webcam View</label>
+<br>
+<br>
+<div id="camera"></div>
+<br>
+<br>
+<label id="webcam_result">Picture</label>
+<br>
+<br>
+<div id="camera_result"></div>
+<br>
+<br>
+<button id="take_picture" class="btn btn-success" onclick="take_picture()">Take Picture</button>
+<br>
+<br>
+<button id="check" class="btn btn-info" onclick="check()">Check</button>
+<p id="item_label">Person: <span id="item"></span></p>
+<br>
+<br>
+<p id="accuracy_label">Accuracy: <span id="accuracy"></span></p>
+</div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
